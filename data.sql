@@ -1,0 +1,50 @@
+
+use database;
+
+insert into books values (1, "Scientific Progress Goes \"Boink\"", "Bill Watterson", null, false);
+insert into books values (2, "Book 2", "Author 1", null, false);
+insert into books values (3, "Book 3", "Author 10", null, true);
+insert into books values (4, "Book 4", "Author 2", null, true);
+insert into books values (5, "Book 5", "Author 9", "1234th", false);
+insert into books values (6, "Book 6", "Author 2", null, false);
+insert into books values (7, "Book 7", "Author 1", null, false);
+insert into books values (8, "Book 8", "Author 3", null, true);
+insert into books values (9, "Book 9", "Author 4", null, true);
+insert into books values (10, "Book 10", "Author 5", null, true);
+insert into books values (11, "Book 11", "Author 3", null, false);
+insert into books values (12, "Book 12", "Author 1", null, true);
+insert into books values (13, "Book 13", "Author 4", null, false);
+insert into books values (14, "Book 14", "Author 5", null, true);
+insert into books values (15, "Book 15", "Author 8", "7th", false);
+insert into books values (16, "Book 15", "Author 8", "7th", true);
+insert into books values (17, "Book 15", "Author 8", "9th", true);
+insert into books values (18, "Book 16", "Author 7", null, false);
+insert into books values (19, "Book 17", "Author 11", null, false);
+
+insert into members values (1, "Harold", "Gatsby", "(570)-662-1010", true, 0, 1);
+insert into members values (2, "Harold", "Frudel", "(570)-662-1010", true, 5.00, 0);
+insert into members values (3, "Jenn", "Gatsby", "(570)-662-1010", true, 0, 1);
+insert into members values (4, "Grover", "Haloway", "(570)-662-1010", false, 20.00, 0);
+insert into members values (5, "Sarah", "Smith", "(570)-662-1010", true, 0, 0);
+insert into members values (6, "Fryda", "McCarthy", "(570)-662-1010", true, 0, 5);
+insert into members values (7, "George", "McCarthy", "(570)-662-1010", true, 0, 0);
+insert into members values (8, "Earl", "Cinclair", "(570)-662-1010", true, 0, 0);
+insert into members values (9, "Robbie", "Cinclair", "(570)-662-1010", true, 0, 0);
+insert into members values (10, "Fran", "Cinclair", "(570)-662-1010", true, 2.00, 1);
+insert into members values (11, "Charlene", "Cinclair", "(570)-662-1010", true, 0, 0);
+insert into members values (12, "Baby", "Cinclair", "(570)-662-1010", true, 0, 1);
+insert into members values (13, "Carol", "Fry", "(570)-662-1010", true, 0, 0);
+insert into members values (14, "Trace", "Drundle", "(570)-662-1010", true, 0, 1);
+
+insert into borrows values (1, 6, 1, '2012-08-30', null);
+insert into borrows values (2, 6, 2, '2012-08-30', null);
+insert into borrows values (3, 6, 13, '2012-08-30', null);
+insert into borrows values (4, 6, 15, '2012-08-30', null);
+insert into borrows values (5, 6, 18, '2012-08-30', null);
+insert into borrows values (6, 1, 5, '2012-08-31', null);
+insert into borrows values (7, 13, 6, '2012-09-01', '2012-09-02');
+insert into borrows values (8, 14, 7, '2012-09-01', null);
+insert into borrows values (9, 2, 1, '2012-09-02', '2012-09-03');
+insert into borrows values (10, 12, 6, '2012-09-02', null);
+insert into borrows values (11, 10, 19, '2012-09-03', null);
+insert into borrows values (12, 3, 11, '2012-09-03', null);
